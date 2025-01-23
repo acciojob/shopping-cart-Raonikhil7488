@@ -8,6 +8,30 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>Shopping List</h1>
+    
+    <label for="item-name-input">Item Name:</label>
+    <input type="text" id="item-name-input" aria-label="Item name" required>
+
+    <label for="item-price-input">Price:</label>
+    <input type="number" id="item-price-input" aria-label="Item price" required min="0" step="0.01">
+
+    <button id="add" aria-label="Add item to list">Add</button>
+    
+    <table role="table" border="1">
+        <thead>
+            <tr role="row">
+                <th role="columnheader" id="item">Item</th>
+                <th role="columnheader" id="price">Price</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+            <tr role="row">
+                <td role="cell" colspan="2">Grand Total: <span id="total">0</span></td>
+            </tr>
+        </tbody>
+    </table>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
